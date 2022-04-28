@@ -1,0 +1,20 @@
+<h1> Dubious Dangerous Devs Blogs </h1>
+<ul>
+    <%= @blogs.each do |blog| %>
+            <li>
+                <%= blog.title %>
+            </li>
+    
+</ul>
+    
+<ul>
+            <li>
+                <%= link_to blog.title, blogs_path(blog) %>
+            </li>  
+                <% end %>   
+</ul>
+
+<%= @blogs %> 
+
+
+
